@@ -1,0 +1,9 @@
+<h1>Selecione a data</h1>
+
+<%= form_tag("/result", method: "get") do %>
+  <%= label_tag(:date_begin, "Mes/Ano de inicio:") %>
+  <%= date_field_tag(:date_begin) %>
+  <%= label_tag(:date_end, "Mes/Ano de inicio:") %>
+  <%= date_field_tag(:date_end) %>
+  <%= submit_tag("buscar") %>
+<% end %>
