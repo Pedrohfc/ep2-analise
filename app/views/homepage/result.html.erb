@@ -1,4 +1,20 @@
-<h1><%= @ini %></h1>
-<h1><%= @fim %></h1>
+<h1>Resultado de <%= @date_begin %> até <%= @date_end %></h1>
+<h2>Média de temperatura</h2>
+<%= line_chart @media_temp, library: {vAxis: {title: "Temperatura (Fahrenheit)"}, hAxis:{title: "Meses"}} %>
 
+<h2>Desvio padrão da temperatura</h2>
+<%= line_chart @desvio_temp, library: {vAxis: {title: "Temperatura (Fahrenheit)"}, hAxis:{title: "Meses"}} %>
 
+<h2>Média de dewp</h2>
+<%= line_chart @media_dewp, library: {vAxis: {title: "Temperatura (Fahrenheit)"}, hAxis:{title: "Meses"}} %>
+
+<h2>Desvio padrão de dewp</h2>
+<%= line_chart @desvio_dewp, library: {vAxis: {title: "Temperatura (Fahrenheit)"}, hAxis:{title: "Meses"}} %>
+
+<h2>Média da velocidade do vento</h2>
+<%= line_chart @media_w, library: {vAxis: {title: "Velocidade do vento (knots to tenths)"}, hAxis:{title: "Meses"}} %>
+
+<h2>Desvio padrão da velocidade do vento</h2>
+<%= line_chart @desvio_w, library: {vAxis: {title: "Velocidade do vento (knots to tenths)"}, hAxis:{title: "Meses"}} %>
+<br />
+<%= link_to "Voltar", action: "index" %>
