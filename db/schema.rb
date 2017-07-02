@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170702200606) do
+ActiveRecord::Schema.define(version: 20170702203107) do
 
   create_table "months", force: :cascade do |t|
     t.decimal  "media_temp"
@@ -27,6 +27,9 @@ ActiveRecord::Schema.define(version: 20170702200606) do
     t.decimal  "b_w"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
+    t.integer  "month"
+    t.integer  "year"
+    t.date     "mes_ano"
   end
 
 end
