@@ -8,7 +8,7 @@
 
 begin
   Month.destroy_all
-  for i in (1929..1929)
+  for i in (1929..1956)
     file = File.open("hadoop/#{i}/part-r-00000")
     puts("opening hadoop/#{i}/part-r-00000")
     while (line = file.gets)
