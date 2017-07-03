@@ -27,8 +27,6 @@ ActiveRecord::Schema.define(version: 20170702223716) do
     t.decimal  "b_w"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
-    t.integer  "month"
-    t.integer  "year"
     t.date     "mes_ano"
     t.decimal  "mediah_temp"
     t.decimal  "var_temp"
